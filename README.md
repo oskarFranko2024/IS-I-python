@@ -15,14 +15,14 @@ classDiagram
 
     class FileScanner {
       -processor_factory: ProcessorFactory
-      +scan_files(folder_path: String, word: String): Map~String, Integer~
+      +scan_files(folder_path: String, word: String): MapStringInteger
     }
 
     class ProcessorFactory {
       +get_processor(type: String): FileProcessor
     }
 
-    FileProcessor <|-- TextFileProcessor : implements
-    FileProcessor <|-- JsonFileProcessor : implements
+    FileProcessor <|.. TextFileProcessor : implements
+    FileProcessor <|.. JsonFileProcessor : implements
     FileScanner --> ProcessorFactory : depends on
     ProcessorFactory ..> FileProcessor : creates
