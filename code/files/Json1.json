@@ -1,0 +1,10 @@
+{
+  "descripcion": "Cómo arar un campo de trigo. Para cultivar un campo de trigo primero se debe alistar la tierra (arar, preliminar) apropiadamente; y para ello se debe arar, por lo general con herramientas como un tractor, creando los surcos necesarios para las semillas.",
+  "pasos": [
+    "Alistar la tierra",
+    "Usar un tractor para arar",
+    "Crear surcos para las semillas"
+  ],
+  "herramientas": "tractor",
+  "nota": "La eficiencia del arado depende de la correcta preparación del terreno."
+}
